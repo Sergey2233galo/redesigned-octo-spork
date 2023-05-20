@@ -13,7 +13,7 @@ class PostList(ListView):
     ordering = '-id'
     template_name = 'posts.html'
     context_object_name = 'posts'
-    paginate_by = 2
+    paginate_by = 10
 
     def get_queryset(self):
         queryset = super().get_queryset()
